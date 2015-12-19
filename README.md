@@ -14,7 +14,7 @@ console.log(isset('hello'));
 //=> true
 
 console.log(isset());
-//=> false
+//=> { 'module': 'isset', 'message': 'This field is required.' }
 ```
 
 ## License
