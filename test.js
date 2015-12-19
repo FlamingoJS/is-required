@@ -1,8 +1,6 @@
 import { expect } from 'chai';
 import isset from './';
 
-const errorObject = { 'module': 'isset', 'message': 'This field is required.' };
-
 describe('isset', () => {
   it('should return true', () => {
     expect(isset('Hello')).to.be.true;
@@ -13,10 +11,10 @@ describe('isset', () => {
   });
 
   it('should return false', () => {
-    expect(isset('')).to.eql(errorObject);
-    expect(isset()).to.eql(errorObject);
-    expect(isset(null)).to.eql(errorObject);
-    expect(isset(undefined)).to.eql(errorObject);
-    expect(isset([])).to.eql(errorObject);
+    expect(isset('')).to.be.false;
+    expect(isset()).to.be.false;
+    expect(isset(null)).to.be.false;
+    expect(isset(undefined)).to.be.false;
+    expect(isset([])).to.be.false;
   });
 });

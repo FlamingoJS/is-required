@@ -13,8 +13,8 @@ const isset = require('isset');
 console.log(isset('hello'));
 //=> true
 
-console.log(isset());
-//=> { 'module': 'isset', 'message': 'This field is required.' }
+console.log(isset(''));
+//=> false
 ```
 
 ## License
