@@ -12,9 +12,9 @@ describe('isset', () => {
 
   it('should return false', () => {
     expect(isset('')).to.be.false;
+    expect(isset('   ')).to.be.false;
     expect(isset()).to.be.false;
     expect(isset(null)).to.be.false;
-    expect(isset(undefined)).to.be.false;
-    expect(isset([])).to.be.false;
+    expect(isset(undefined)).to.be.false
   });
 });

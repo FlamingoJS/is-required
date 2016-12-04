@@ -1,7 +1,7 @@
 module.exports = function isset(string) {
-  if (typeof string === 'undefined' || string === null || string.length === 0) {
-    return false;
+  if (typeof string === 'string') {
+    return string.replace(/ /g, '').length > 0;
   } else {
-    return true;
+    return !(typeof string === 'undefined' || string === null);
   }
 };

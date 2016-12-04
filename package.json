@@ -1,6 +1,6 @@
 {
   "name": "isset",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Determine if a variable is set and is not NULL",
   "license": "MIT",
   "repository": {
